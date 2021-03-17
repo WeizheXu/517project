@@ -1,5 +1,5 @@
 #! /bin/bash
-export PYTHONPATH="$PYTHONPATH:/home/xuweizhe/517_project/AC-MIMLLN-master"
+export PYTHONPATH="$PWD"
 
 # Default models:
 # AC-MIMLLN: REST14
@@ -49,8 +49,6 @@ time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classificatio
 time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset MAMSACSA --mil True --bert False --pair False --joint_type pipeline --acd_sc_mode multi-single --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 3 --batch_size 64 --train True --evaluate True --evaluation_on_instance_level False
 
 
-
-
 # Layer 1 models:
 # AC-MIMLLN: REST14
 time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset SemEval-2014-Task-4-REST-DevSplits --mil True --bert False --pair False --joint_type joint --acd_sc_mode multi-multi --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 1 --batch_size 32 --train True --evaluate True --evaluation_on_instance_level False
@@ -66,3 +64,23 @@ time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classificatio
 time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset MAMSACSA --mil True --bert False --pair False --joint_type joint --acd_sc_mode multi-multi --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 2 --batch_size 64 --train True --evaluate True --evaluation_on_instance_level False
 
 
+#Layer 6 models:
+# AC-MIMLLN: REST14
+time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset SemEval-2014-Task-4-REST-DevSplits --mil True --bert False --pair False --joint_type joint --acd_sc_mode multi-multi --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 6 --batch_size 32 --train True --evaluate True --evaluation_on_instance_level False
+
+# AC-MIMLLN MAMSACSA
+time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset MAMSACSA --mil True --bert False --pair False --joint_type joint --acd_sc_mode multi-multi --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 6 --batch_size 64 --train True --evaluate True --evaluation_on_instance_level False
+
+#Layer 9 models:
+# AC-MIMLLN: REST14
+time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset SemEval-2014-Task-4-REST-DevSplits --mil True --bert False --pair False --joint_type joint --acd_sc_mode multi-multi --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 9 --batch_size 32 --train True --evaluate True --evaluation_on_instance_level False
+
+# AC-MIMLLN MAMSACSA
+time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset MAMSACSA --mil True --bert False --pair False --joint_type joint --acd_sc_mode multi-multi --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 9 --batch_size 64 --train True --evaluate True --evaluation_on_instance_level False
+
+#Layer 12 models:
+# AC-MIMLLN: REST14
+time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset SemEval-2014-Task-4-REST-DevSplits --mil True --bert False --pair False --joint_type joint --acd_sc_mode multi-multi --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 12 --batch_size 32 --train True --evaluate True --evaluation_on_instance_level False
+
+# AC-MIMLLN MAMSACSA
+time python nlp_tasks/absa/aspect_category_detection_and_sentiment_classification/acd_and_sc_bootstrap_pytorch_mil.py --embedding_filepath /home/xuweizhe/517_project/glove.840B.300d.txt --data_type mil --current_dataset MAMSACSA --mil True --bert False --pair False --joint_type joint --acd_sc_mode multi-multi --lstm_or_fc_after_embedding_layer lstm --lstm_layer_num_in_lstm 12 --batch_size 64 --train True --evaluate True --evaluation_on_instance_level False
